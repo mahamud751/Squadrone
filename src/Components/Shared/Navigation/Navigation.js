@@ -1,7 +1,7 @@
-import { Box, Button, Typography } from '@mui/material';
 import React from 'react';
-import { Container, Nav, Navbar, NavDropdown } from 'react-bootstrap';
 import { Link, NavLink } from 'react-router-dom';
+import { Box, Button } from '@mui/material';
+import { Container, Nav, Navbar } from 'react-bootstrap';
 
 
 const Navigation = () => {
@@ -11,7 +11,7 @@ const Navigation = () => {
             <Navbar bg="primary" expand="lg" fixed="top">
                 <Container>
                     <Navbar.Brand>
-                        <Typography className='text-white'>SquaDrone</Typography>
+                        <img height="60px" src="http://squadrone.bold-themes.com/main-demo/wp-content/uploads/sites/2/2017/12/logo-white.png" alt="logo" />
                     </Navbar.Brand>
                     <Navbar.Toggle />
                     <Navbar.Collapse className="justify-content-end">
