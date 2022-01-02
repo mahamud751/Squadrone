@@ -1,10 +1,10 @@
 import React from 'react';
 import Navigation from '../../Shared/Navigation/Navigation';
-import FourthPart from '../HomeContent/FourthPart';
-
+import Slider from '../Slider/Slider';
 import SecondPart from '../HomeContent/SecondPart';
 import ThirdPart from '../HomeContent/ThirdPart';
-import Slider from '../Slider/Slider';
+import FourthPart from '../HomeContent/FourthPart';
+import Team from '../HomeContent/Team';
 
 const Home = () => {
     return (
@@ -14,6 +14,7 @@ const Home = () => {
             <SecondPart></SecondPart>
             <FourthPart></FourthPart>
             <ThirdPart></ThirdPart>
+            <Team></Team>
         </div>
     );
 };
