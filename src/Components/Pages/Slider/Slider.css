@@ -2,5 +2,18 @@
     /* background-color: rgb(15, 15, 15); */
 }
 /* .home_slider img{
-    height: 600px;
+    height: 100vh;
 } */
+.caption{
+    margin-top: -220px;
+}
+.wave-effects{
+    animation: 4s linear infinite backwards;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-fill-mode: backwards;
+    animation-play-state: running;
+}

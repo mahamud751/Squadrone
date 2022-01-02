@@ -40,7 +40,7 @@ const FourthPart = () => {
                                 </Typography>
                             </Grid>
                             <Grid item xs={12} md={4}>
-                                <img className='img-fluid' src="http://squadrone.bold-themes.com/main-demo/wp-content/uploads/sites/2/2017/12/inner_product_02-640x385.png" alt="" />
+                                <img className='img-fluid animate__animated animate__zoomIn animate__infinite	infinite' src="http://squadrone.bold-themes.com/main-demo/wp-content/uploads/sites/2/2017/12/inner_product_02-640x385.png" alt="" style={{ width: "600px", height: "300px" }} />
                             </Grid>
                             <Grid item xs={12} md={4} className='text-start'>
                                 <Typography variant='subtitle1' className='my-3'>

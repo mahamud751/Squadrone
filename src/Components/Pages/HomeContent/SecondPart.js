@@ -3,7 +3,7 @@ import React from 'react';
 
 const SecondPart = () => {
     return (
-        <div className='m-5' style={{ backgroundColor: "", height: "100vh" }}>
+        <div className='m-5' style={{ backgroundColor: "" }}>
             <div className='d-flex justify-content-center align-content-center'>
                 <div>
                     <Container>

@@ -3,6 +3,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Home from './Components/Pages/Home/Home';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Products from './Components/Pages/Products/Products';
+import ProductsDetails from './Components/Pages/ProductDetails/ProductDetails'
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
           <Route path="/" element={<Home />}></Route>
           <Route path="/home" element={<Home />}></Route>
           <Route path="/products" element={<Products />}></Route>
+          <Route path="/product/:productId" element={<ProductsDetails />}></Route>
         </Routes>
       </Router>
     </div>
