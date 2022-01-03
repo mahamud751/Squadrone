@@ -4,7 +4,7 @@ const Payment = () => {
     return (
         <div>
             <h4>Payment page</h4>
-            <h3>my payment</h3>
+            <h3> payment</h3>
         </div>
     );
 };
