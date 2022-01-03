@@ -21,6 +21,8 @@ import SignUp from './Components/LoginPage/SignUp/SignUp';
 
 import ProductsDetails from './Components/Pages/ProductDetails/ProductDetails'
 import Footer from './Components/Pages/Footer/Footer';
+import Review from './Components/Dashboard/Review/Review';
+import Booking from './Components/Pages/Home/Booking/Booking';
 
 
 function App() {
@@ -31,9 +33,11 @@ function App() {
           <Route path="/" element={<Home />}></Route>
           <Route path="/home" element={<Home />}></Route>
           <Route path="/products" element={<Products />}></Route>
+          <Route path="/booking/:id" element={<Booking />}></Route>
           <Route path="/dashboard" element={<PrivateRoute><DashboardMenu /></PrivateRoute>}>
             <Route path="/dashboard" element={<DashboardOutlet></DashboardOutlet>}></Route>
             <Route path={`/dashboard/myOrders`} element={<MyOrders />}> </Route>
+            <Route path={`/dashboard/review`} element={<Review />}> </Route>
             <Route path={`/dashboard/payment`} element={<Payment></Payment>}></Route>
             <Route path={`/dashboard/addProduct`} element={<AddProduct />}></Route>
             <Route path={`/dashboard/addBlog`} element={<AdminRoute><AddBlog /></AdminRoute>}></Route>

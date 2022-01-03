@@ -3,6 +3,7 @@ import { Navigate, useLocation } from 'react-router-dom';
 import { Spinner } from 'react-bootstrap';
 import useAuth from '../../../hooks/useAuth';
 
+
 const AdminRoute = ({ children, ...rest }) => {
     const { user, admin, loading } = useAuth();
     const location = useLocation();
