@@ -5,6 +5,8 @@ import FourthPart from '../HomeContent/FourthPart';
 
 import SecondPart from '../HomeContent/SecondPart';
 import ThirdPart from '../HomeContent/ThirdPart';
+import DronePictures from '../HomeContent/DronePictures'
+import Faq from '../Faq/Faq'
 
 import Slider from '../Slider/Slider';
 
@@ -12,12 +14,12 @@ const Home = () => {
     return (
         <div>
             <Navigation></Navigation>
-            <h1 className="animate__animated animate__bounce">An animated element</h1>
             <Slider></Slider>
-            <h1 className="animate__animated animate__slideInDown animate__slideInLeft animate__slideInRight animate__slideInUp">An animated element</h1>
             <SecondPart></SecondPart>
             <FourthPart></FourthPart>
             <ThirdPart></ThirdPart>
+            <DronePictures></DronePictures>
+            <Faq></Faq>
             <Footer></Footer>
 
         </div>

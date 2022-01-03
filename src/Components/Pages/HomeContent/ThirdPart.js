@@ -21,7 +21,7 @@ const ThirdPart = () => {
                     <Grid item xs={12} md={6}>
                         <div className=''>
                             <div>
-                                <img className='img-fluid' src="https://i.ibb.co/931vyXn/11-850x.png" alt="" />
+                                <img className='img-fluid animate__animated animate__slideInLeft animate__slower	3s animate__infinite infinite' src="https://i.ibb.co/931vyXn/11-850x.png" alt="" />
                             </div>
                         </div>
                     </Grid>

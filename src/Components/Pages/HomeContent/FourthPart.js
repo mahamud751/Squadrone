@@ -8,7 +8,7 @@ import { pink } from '@mui/material/colors';
 
 const FourthPart = () => {
     return (
-        <div style={{ backgroundColor: "" }}>
+        <div style={{ marginTop: "120px" }}>
             <div >
                 <div>
                     <Typography variant='h5'>

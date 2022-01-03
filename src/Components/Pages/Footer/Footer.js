@@ -13,7 +13,7 @@ const Footer = () => {
                     <h5>CONTACT US</h5>
                     <br />
                     {/* <p><FontAwesomeIcon icon={faPhone} /> PHONE: <small>+880189999929</small></p> */}
-                    <p><i className="fas fa-envelope"></i> Email: <small className="small">abc@yahoo.com</small> </p>
+                    <p><i className="fas fa-envelope"></i> Email: <small className="small">squaDrone@yahoo.com</small> </p>
                 </div>
                 <div className="col-lg-6 col-md-6 col-12 my-5 text-center text-white">
                     <h5>SOCIAL</h5>
@@ -41,7 +41,7 @@ const Footer = () => {
                     </InputGroup>
                 </div>
             </div>
-            <p className="text-center text-white mt-4">© Copyright © pino. All rights reserved.</p>
+            <p className="text-center text-white mt-4">© Copyright © SquaDrone. All rights reserved.</p>
         </div >
 
     );
