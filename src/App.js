@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Home from './Components/Pages/Home/Home';
 import Products from './Components/Pages/Products/Products';
+
 import DashboardMenu from './Components/Dashboard/DashboardMenu/DashboardMenu';
 import AuthProvider from './contexts/AuthProvider/AuthProvider';
 import DashboardOutlet from './Components/Dashboard/DashboardOutlet/DashboardOutlet';
@@ -17,6 +18,10 @@ import ManageOrders from './Components/Dashboard/ManageOrders/ManageOrders';
 import ManageProducts from './Components/Dashboard/ManageProducts/ManageProducts';
 import Login from './Components/LoginPage/Login/Login';
 import SignUp from './Components/LoginPage/SignUp/SignUp';
+
+import ProductsDetails from './Components/Pages/ProductDetails/ProductDetails'
+import Footer from './Components/Pages/Footer/Footer';
+
 
 function App() {
   return (
@@ -38,9 +43,11 @@ function App() {
           </Route>
           <Route path="/login" element={<Login />}></Route>
           <Route path="/signup" element={<SignUp />}></Route>
-        </Routes>
-      </Router>
-    </AuthProvider>
+          <Route path="/product/:productId" element={<ProductsDetails />}></Route>
+          <Route path="/footer" element={<Footer />}></Route>
+        </Routes >
+      </Router >
+    </AuthProvider >
   );
 }
 

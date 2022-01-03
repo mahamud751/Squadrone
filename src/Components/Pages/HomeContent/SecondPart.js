@@ -3,13 +3,13 @@ import React from 'react';
 
 const SecondPart = () => {
     return (
-        <div className='m-5' style={{ backgroundColor: "", height: "100vh" }}>
+        <div style={{ marginTop: "120px" }}>
             <div className='d-flex justify-content-center align-content-center'>
                 <div>
                     <Container>
                         <Grid container spacing={20}>
                             <Grid item xs={12} md={6}>
-                                <img className='img-fluid' src="http://squadrone.bold-themes.com/main-demo/wp-content/uploads/sites/2/2017/12/inner_product_01-640x384.png" alt="" />
+                                <img className='img-fluid animate__animated animate__slideInLeft animate__slower	3s animate__infinite infinite' src="http://squadrone.bold-themes.com/main-demo/wp-content/uploads/sites/2/2017/12/inner_product_01-640x384.png" alt="" />
                             </Grid>
                             <Grid item xs={12} md={6} className='text-start'>
 
