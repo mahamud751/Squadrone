@@ -10,7 +10,7 @@ const Footer = () => {
         <div className="footer-main text-start p-5 mt-5">
             <div className="row">
                 <div className="col-lg-3 col-md-3  col-12 my-5 text-center text-white">
-                    <h5>CONTACT US</h5>
+                    <h5>CONTACT US Now</h5>
                     <br />
                     {/* <p><FontAwesomeIcon icon={faPhone} /> PHONE: <small>+880189999929</small></p> */}
                     <p><i className="fas fa-envelope"></i> Email: <small className="small">abc@yahoo.com</small> </p>

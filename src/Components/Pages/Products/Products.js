@@ -10,7 +10,7 @@ const Products = () => {
     const dispatch = useDispatch();
     const fetchProducts = async () => {
         const response = await axios
-            .get("https://morning-brook-76931.herokuapp.com/products")
+            .get("https://pacific-wave-94058.herokuapp.com/products")
             .catch((err) => {
             });
         dispatch(setProducts(response.data.slice(0, 6)));
