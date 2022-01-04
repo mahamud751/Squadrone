@@ -34,7 +34,14 @@ function App() {
           <Route path="/dashboard" element={<PrivateRoute><DashboardMenu /></PrivateRoute>}>
             <Route path="/dashboard" element={<DashboardOutlet></DashboardOutlet>}></Route>
             <Route path={`/dashboard/myOrders`} element={<MyOrders />}> </Route>
-            <Route path={`/dashboard/payment`} element={<Payment></Payment>}></Route>
+
+
+            <Route
+              path={`/dashboard/payment/:orderId`}
+              element={<Payment></Payment>}>
+            </Route>
+
+
             <Route path={`/dashboard/addProduct`} element={<AddProduct />}></Route>
             <Route path={`/dashboard/addBlog`} element={<AdminRoute><AddBlog /></AdminRoute>}></Route>
             <Route path={`/dashboard/makeAdmin`} element={<AdminRoute><MakeAdmin /></AdminRoute>}> </Route>
