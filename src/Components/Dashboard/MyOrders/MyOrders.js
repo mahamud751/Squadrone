@@ -54,10 +54,9 @@ const MyOrders = () => {
                             <TableCell align="right">Phone</TableCell>
                             <TableCell align="right">Date</TableCell>
                             <TableCell align="right">Action</TableCell>
-<<<<<<< HEAD
-=======
+
                             <TableCell align="right">Payment</TableCell>
->>>>>>> main
+
 
                         </TableRow>
                     </TableHead>

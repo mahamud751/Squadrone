@@ -1,10 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
-
-import Home from './Components/Pages/Home/Home';
-
-
 import Products from './Components/Pages/Products/Products';
 
 import DashboardMenu from './Components/Dashboard/DashboardMenu/DashboardMenu';
@@ -26,10 +22,9 @@ import ProductsDetails from './Components/Pages/ProductDetails/ProductDetails'
 import Footer from './Components/Pages/Footer/Footer';
 import Review from './Components/Dashboard/Review/Review';
 import Booking from './Components/Pages/Home/Booking/Booking';
-<<<<<<< HEAD
-=======
+
 import Home from './Components/Pages/Home/Home';
->>>>>>> main
+
 
 
 function App() {
