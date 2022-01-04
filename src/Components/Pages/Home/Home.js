@@ -5,6 +5,10 @@ import SecondPart from '../HomeContent/SecondPart';
 import ThirdPart from '../HomeContent/ThirdPart';
 import FourthPart from '../HomeContent/FourthPart';
 import Team from '../HomeContent/Team';
+import Footer from '../Footer/Footer';
+import DronePictures from '../HomeContent/DronePictures'
+import Faq from './Faq/Faq'
+
 
 const Home = () => {
     return (
@@ -14,7 +18,10 @@ const Home = () => {
             <SecondPart></SecondPart>
             <FourthPart></FourthPart>
             <ThirdPart></ThirdPart>
+            <DronePictures></DronePictures>
             <Team></Team>
+            <Faq></Faq>
+            <Footer></Footer>
         </div>
     );
 };

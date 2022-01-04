@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Home from './Components/Pages/Home/Home';
 import Products from './Components/Pages/Products/Products';
+
 import DashboardMenu from './Components/Dashboard/DashboardMenu/DashboardMenu';
 import AuthProvider from './contexts/AuthProvider/AuthProvider';
 import DashboardOutlet from './Components/Dashboard/DashboardOutlet/DashboardOutlet';
@@ -18,6 +19,12 @@ import ManageProducts from './Components/Dashboard/ManageProducts/ManageProducts
 import Login from './Components/LoginPage/Login/Login';
 import SignUp from './Components/LoginPage/SignUp/SignUp';
 
+import ProductsDetails from './Components/Pages/ProductDetails/ProductDetails'
+import Footer from './Components/Pages/Footer/Footer';
+import Review from './Components/Dashboard/Review/Review';
+import Booking from './Components/Pages/Home/Booking/Booking';
+
+
 function App() {
   return (
     <AuthProvider>
@@ -26,9 +33,11 @@ function App() {
           <Route path="/" element={<Home />}></Route>
           <Route path="/home" element={<Home />}></Route>
           <Route path="/products" element={<Products />}></Route>
+          <Route path="/booking/:id" element={<Booking />}></Route>
           <Route path="/dashboard" element={<PrivateRoute><DashboardMenu /></PrivateRoute>}>
             <Route path="/dashboard" element={<DashboardOutlet></DashboardOutlet>}></Route>
             <Route path={`/dashboard/myOrders`} element={<MyOrders />}> </Route>
+            <Route path={`/dashboard/review`} element={<Review />}> </Route>
             <Route path={`/dashboard/payment`} element={<Payment></Payment>}></Route>
             <Route path={`/dashboard/addProduct`} element={<AddProduct />}></Route>
             <Route path={`/dashboard/addBlog`} element={<AdminRoute><AddBlog /></AdminRoute>}></Route>
@@ -38,9 +47,11 @@ function App() {
           </Route>
           <Route path="/login" element={<Login />}></Route>
           <Route path="/signup" element={<SignUp />}></Route>
-        </Routes>
-      </Router>
-    </AuthProvider>
+          <Route path="/product/:productId" element={<ProductsDetails />}></Route>
+          <Route path="/footer" element={<Footer />}></Route>
+        </Routes >
+      </Router >
+    </AuthProvider >
   );
 }
 
