@@ -10,7 +10,7 @@ const FourthPart = () => {
     return (
         <div style={{ marginTop: "120px" }}>
             <div >
-                <div>
+                <div className='text-center'>
                     <Typography variant='h5'>
                         AERIAL PHOTOGRAPHY
                     </Typography>

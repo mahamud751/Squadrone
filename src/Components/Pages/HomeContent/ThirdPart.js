@@ -12,8 +12,8 @@ import AssistantDirectionIcon from '@mui/icons-material/AssistantDirection';
 const ThirdPart = () => {
 
     return (
-        <div className='mt-5' style={{ backgroundColor: "", height: "100vh" }}>
-            <Typography variant='h2' className='m-5'>
+        <div style={{ marginTop: "120px" }}>
+            <Typography variant='h2' className='m-5, text-center'>
                 Our Services
             </Typography>
             <Container>
@@ -131,58 +131,7 @@ const ThirdPart = () => {
 
 
                             </Carousel.Item>
-                            <Carousel.Item className='bg-gray p-3'>
-                                <CardContent className='cardContent'>
-                                    <Grid container spacing={2}>
-                                        <Grid item xs={12} md={4}>
-                                            <CameraAltIcon sx={{ fontSize: "80px" }} />
-                                        </Grid>
 
-                                        <Grid item xs={12} md={8}>
-                                            <Typography gutterBottom variant="h5">
-                                                HD 4K Video
-                                            </Typography>
-                                            <Typography variant="body2" color="text.secondary">
-                                                Get the drone with a spectacular 4k camera.
-                                            </Typography>
-                                        </Grid>
-                                    </Grid>
-                                </CardContent>
-                                <CardContent className='mt-5 cardContent' style={{ backgroundColor: "#f3f3f3" }}>
-                                    <Grid container spacing={2}>
-                                        <Grid item xs={12} md={4}>
-                                            <SportsEsportsIcon sx={{ fontSize: "80px" }} />
-                                        </Grid>
-
-                                        <Grid item xs={12} md={8}>
-                                            <Typography gutterBottom variant="h5">
-                                                Easy To Control
-                                            </Typography>
-                                            <Typography variant="body2" color="text.secondary">
-                                                Superior remote control system up to 1 km.
-                                            </Typography>
-                                        </Grid>
-                                    </Grid>
-                                </CardContent>
-                                <CardContent className='mt-5 cardContent' style={{ backgroundColor: "#f3f3f3" }}>
-                                    <Grid container spacing={2}>
-                                        <Grid item xs={12} md={4}>
-                                            <AirplanemodeActiveIcon sx={{ fontSize: "80px" }} />
-                                        </Grid>
-
-                                        <Grid item xs={12} md={8}>
-                                            <Typography gutterBottom variant="h5">
-                                                Balance when Flying
-                                            </Typography>
-                                            <Typography variant="body2" color="text.secondary">
-                                                Superior remote control system up to 1 km.
-                                            </Typography>
-                                        </Grid>
-                                    </Grid>
-                                </CardContent>
-
-
-                            </Carousel.Item>
                         </Carousel>
                     </Grid>
                 </Grid >

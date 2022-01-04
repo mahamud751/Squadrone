@@ -3,7 +3,7 @@ import { Accordion } from 'react-bootstrap';
 const Faq = () => {
     return (
         <div>
-            <div className="mt-5 p-5">
+            <div style={{ marginTop: "120px" }}>
                 <h1 className="bg-danger text-white p-3"> Do You Have Questions About Our Service?
                 </h1>
                 <div className="row p-5">

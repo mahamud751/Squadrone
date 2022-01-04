@@ -14,7 +14,7 @@ function srcset(image, size, rows = 1, cols = 1) {
 export default function QuiltedImageList() {
     return (
         <div style={{ marginTop: "120px", backgroundColor: "black" }} >
-            <Typography variant='h4' className='my-5 text-white'>
+            <Typography variant='h4' className='my-5 text-white text-center'>
                 Photo taken from Drones
             </Typography>
 

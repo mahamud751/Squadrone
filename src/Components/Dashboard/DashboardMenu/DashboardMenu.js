@@ -48,6 +48,11 @@ const DashboardMenu = (props) => {
                             </NavLink>
                         </ListItem>
                         <ListItem>
+                            <NavLink className="text-decoration-none" to={`/dashboard/review`}>
+                                <MdBookmarkBorder style={{ color: "white", fontSize: "25px" }} />  <Button style={{ textAlign: "center", color: "white" }} color="inherit">Add a Review</Button>
+                            </NavLink>
+                        </ListItem>
+                        <ListItem>
                             <NavLink className="text-decoration-none" to={`/dashboard/payment`}>
                                 <MdPayment style={{ color: "white", fontSize: "25px" }} />   <Button style={{ textAlign: "center", color: "white" }} color="inherit">Payment</Button>
                             </NavLink>

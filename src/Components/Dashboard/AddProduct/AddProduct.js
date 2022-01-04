@@ -25,7 +25,7 @@ const AddProduct = () => {
         formData.append('image', image);
 
 
-        fetch('http://localhost:5000/products', {
+        fetch('https://pacific-wave-94058.herokuapp.com/products', {
             method: "POST",
             body: formData
         })
