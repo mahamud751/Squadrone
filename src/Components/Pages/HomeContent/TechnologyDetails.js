@@ -8,8 +8,8 @@ import { pink } from '@mui/material/colors';
 
 
 const Technology = () => {
-    const TechnologyDetails = () => {
 
+    const TechnologyDetails = () => {
         return (
             <div style={{ marginTop: "120px" }}>
                 <div >
