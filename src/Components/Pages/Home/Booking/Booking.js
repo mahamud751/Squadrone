@@ -1,5 +1,6 @@
 import axios from 'axios';
 import React, { useEffect, useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import { useForm } from 'react-hook-form';
 import './Booking.css'
 import Box from '@mui/material/Box';
@@ -31,6 +32,8 @@ const Booking = () => {
     const { register, handleSubmit, reset } = useForm();
     const [products, setProducts] = useState([])
     const [success, setSuccess] = useState(false);
+
+    const navigate = useNavigate()
     useEffect(() => {
         fetch(`https://pacific-wave-94058.herokuapp.com/products/${id}`)
             .then(res => res.json())
@@ -43,6 +46,7 @@ const Booking = () => {
             .then(res => {
                 if (res.data.insertedId) {
                     setSuccess(true)
+                    navigate('/dashboard/myOrders');
                     reset()
 
                 }
@@ -93,8 +97,8 @@ const Booking = () => {
                             id="outlined-size-small"
                             sx={{ width: "90%", m: 1 }}
                             {...register("date")}
-                            label="Date"
                             size="small"
+                            type="date"
                         />
 
                         <Button type="submit" variant="contained">BOOKING</Button>

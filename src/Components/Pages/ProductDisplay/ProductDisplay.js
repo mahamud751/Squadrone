@@ -20,7 +20,7 @@ const ProductDisplay = () => {
                             component="img"
                             className="img-fluid bg-dark"
                             style={{ width: 400, height: 400 }}
-                            image={image}
+                            image={`data:image/png;base64,${image}`}
                             alt="Paella dish"
                         />
                         {/* <img className="img-fluid" src={img} alt="" style={{ width: 400, height: 400 }} /> */}

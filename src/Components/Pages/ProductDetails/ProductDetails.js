@@ -10,7 +10,7 @@ import { selectedProduct, removeSelectedProduct } from "../../../redux/actions/A
 const ProductDetails = () => {
   const { productId } = useParams();
   let product = useSelector((state) => state.product);
-  const { _id, img, title, price, category, description } = product;
+  const { _id, image, title, price, category, description } = product;
   const dispatch = useDispatch();
   const fetchProductDetail = async (id) => {
     const response = await axios
@@ -26,7 +26,7 @@ const ProductDetails = () => {
     return () => {
       dispatch(removeSelectedProduct());
     };
-  }, [productId]);
+  }, []);
 
 
   return (
@@ -40,7 +40,7 @@ const ProductDetails = () => {
               component="img"
               style={{ width: "100%" }}
               // height="550"
-              image={img}
+              image={`data:image/png;base64,${image}`}
               alt="Paella dish"
             />
             <CardContent>

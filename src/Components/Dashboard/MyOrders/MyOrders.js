@@ -18,7 +18,10 @@ const MyOrders = () => {
         const url = `https://pacific-wave-94058.herokuapp.com/orders/?email=${user.email}`
         fetch(url)
             .then(res => res.json())
-            .then(data => setBooking(data))
+            .then(data => {
+                const filterByUser = data.filter(order => order.email === user.email);
+                setBooking(filterByUser)
+            })
     }, [user.email])
     const handleDlt = id => {
         const confirmation = window.confirm('Are you Sure?')
@@ -65,7 +68,7 @@ const MyOrders = () => {
                                 <TableCell align="right">{row.address}</TableCell>
                                 <TableCell align="right">{row.number}</TableCell>
                                 <TableCell align="right">{row.date}</TableCell>
-                                <TableCell align="right"> <p onClick={() => handleDlt(row._id)} style={{ cursor: "pointer" }}>{<DeleteIcon fontSize="large" />}</p></TableCell>
+                                <TableCell align="right"> <p title="Delete" onClick={() => handleDlt(row._id)} style={{ cursor: "pointer" }}>{<DeleteIcon color="error" fontSize="large" />}</p></TableCell>
 
                             </TableRow>
                         ))}
