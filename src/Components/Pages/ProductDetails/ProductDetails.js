@@ -6,6 +6,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { Card, Button, CardContent, Typography, CardMedia } from '@mui/material';
 import AttachMoneyIcon from '@mui/icons-material/AttachMoney';
 import { selectedProduct, removeSelectedProduct } from "../../../redux/actions/Action";
+import Navigation from "../../Shared/Navigation/Navigation";
 
 const ProductDetails = () => {
   const { productId } = useParams();
@@ -30,8 +31,9 @@ const ProductDetails = () => {
 
 
   return (
-    <div className="d-flex justify-content-center align-item-center m-5">
-      <div>
+    <>
+      <Navigation></Navigation>
+      <div className="d-flex justify-content-center align-item-center m-5">
         {Object.keys(product).length === 0 ? (
           <div>...Loading</div>
         ) : (
@@ -79,7 +81,7 @@ const ProductDetails = () => {
 
         )}
       </div>
-    </div>
+    </>
   );
 };
 
