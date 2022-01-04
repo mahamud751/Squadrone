@@ -4,7 +4,7 @@ import CardMedia from '@mui/material/CardMedia';
 
 const Team = () => {
     return (
-        <Container>
+        <Container className='text-center'>
             <Typography sx={{ marginTop: '50px', marginBottom: '80px' }} gutterBottom variant="h4" component="div">
                 Our Dedicated Team
             </Typography>

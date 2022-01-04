@@ -9,26 +9,32 @@ import AttachMoneyIcon from '@mui/icons-material/AttachMoney';
 const ProductDisplay = () => {
     const products = useSelector((state) => state.allProducts.products);
     const renderList = products.map((product) => {
-        const { _id, name, img, price } = product;
+        const { _id, name, image, description, category, price } = product;
 
         return (
             <>
-                <Grid item xs={12} md={4} className="p-2">
+                <Grid item xs={12} md={4}>
 
                     <Card className="bg-dark text-white">
                         <CardMedia
                             component="img"
                             className="img-fluid bg-dark"
                             style={{ width: 400, height: 400 }}
-                            image={img}
+                            image={`data:image/png;base64,${image}`}
                             alt="Paella dish"
                         />
                         {/* <img className="img-fluid" src={img} alt="" style={{ width: 400, height: 400 }} /> */}
                         <CardContent style={{
-                            height: 140
+
                         }}>
                             <Typography variant="h6">
                                 {name}
+                            </Typography>
+                            <Typography variant="h6">
+                                {category}
+                            </Typography>
+                            <Typography variant="h6">
+                                {description}
                             </Typography>
 
                         </CardContent>

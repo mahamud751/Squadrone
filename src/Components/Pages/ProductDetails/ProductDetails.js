@@ -3,18 +3,18 @@ import axios from "axios";
 import { useParams } from "react-router-dom";
 import { Link } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
-import { Card, Button, CardContent, CardMedia, Typography } from '@mui/material';
+import { Card, Button, CardContent, Typography, CardMedia } from '@mui/material';
 import AttachMoneyIcon from '@mui/icons-material/AttachMoney';
 import { selectedProduct, removeSelectedProduct } from "../../../redux/actions/Action";
 
 const ProductDetails = () => {
   const { productId } = useParams();
   let product = useSelector((state) => state.product);
-  const { _id, img, title, price, category, description } = product;
+  const { _id, image, title, price, category, description } = product;
   const dispatch = useDispatch();
   const fetchProductDetail = async (id) => {
     const response = await axios
-      .get(`https://morning-brook-76931.herokuapp.com/products/${id}`)
+      .get(`https://pacific-wave-94058.herokuapp.com/products/${id}`)
       .catch((err) => {
         console.log("Err: ", err);
       });
@@ -26,7 +26,7 @@ const ProductDetails = () => {
     return () => {
       dispatch(removeSelectedProduct());
     };
-  }, [productId]);
+  }, []);
 
 
   return (
@@ -40,7 +40,7 @@ const ProductDetails = () => {
               component="img"
               style={{ width: "100%" }}
               // height="550"
-              image={img}
+              image={`data:image/png;base64,${image}`}
               alt="Paella dish"
             />
             <CardContent>
