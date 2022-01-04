@@ -7,6 +7,7 @@ import Footer from '../Footer/Footer';
 import Faq from './Faq/Faq'
 import About from '../HomeContent/About';
 import Services from '../HomeContent/Services';
+
 import TechnologyDetails from '../HomeContent/TechnologyDetails';
 
 
@@ -16,6 +17,7 @@ const Home = () => {
             <Navigation></Navigation>
             <Slider></Slider>
             <About></About>
+
             <TechnologyDetails></TechnologyDetails>
             <Services></Services>
             {/* <DronePictures></DronePictures> */}

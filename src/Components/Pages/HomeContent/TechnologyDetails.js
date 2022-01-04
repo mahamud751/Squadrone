@@ -65,5 +65,5 @@ const TechnologyDetails = () => {
         </div>
     );
 };
-
 export default TechnologyDetails;
+
