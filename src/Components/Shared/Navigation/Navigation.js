@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link, NavLink } from 'react-router-dom';
 import { Box, Button } from '@mui/material';
-import { Container, Nav, Navbar, NavDropdown } from 'react-bootstrap';
+import { Container, Nav, Navbar } from 'react-bootstrap';
 import useAuth from '../../../hooks/useAuth';
 
 
@@ -9,10 +9,10 @@ const Navigation = () => {
     const { user, logOut } = useAuth()
     return (
         <div>
-            <Navbar bg="primary" variant="dark" expand="lg" sticky="top">
+            <Navbar bg="primary" variant="light" expand="lg" sticky="top">
                 <Container>
                     <Navbar.Brand>
-                        {/* <img height="60px" src="http://squadrone.bold-themes.com/main-demo/wp-content/uploads/sites/2/2017/12/logo-white.png" alt="logo" /> */}
+                        <img height="60px" src="http://squadrone.bold-themes.com/main-demo/wp-content/uploads/sites/2/2017/12/logo-white.png" alt="logo" />
                     </Navbar.Brand>
                     <Navbar.Toggle />
                     <Navbar.Collapse className="justify-content-end">
