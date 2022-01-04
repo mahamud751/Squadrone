@@ -21,7 +21,7 @@ const AddBlog = () => {
         formData.append('image', image);
 
 
-        fetch('https://pacific-wave-94058.herokuapp.com/products', {
+        fetch('https://pacific-wave-94058.herokuapp.com/blogs', {
             method: "POST",
             body: formData
         })
