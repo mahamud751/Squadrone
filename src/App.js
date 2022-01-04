@@ -23,6 +23,7 @@ import ProductsDetails from './Components/Pages/ProductDetails/ProductDetails'
 import Footer from './Components/Pages/Footer/Footer';
 import Review from './Components/Dashboard/Review/Review';
 import Booking from './Components/Pages/Home/Booking/Booking';
+import Blogs from './Components/Blogs/Blogs';
 
 
 function App() {
@@ -33,6 +34,7 @@ function App() {
           <Route path="/" element={<Home />}></Route>
           <Route path="/home" element={<Home />}></Route>
           <Route path="/products" element={<Products />}></Route>
+          <Route path="/blogs" element={<Blogs />}></Route>
           <Route path="/booking/:id" element={<Booking />}></Route>
           <Route path="/dashboard" element={<PrivateRoute><DashboardMenu /></PrivateRoute>}>
             <Route path="/dashboard" element={<DashboardOutlet></DashboardOutlet>}></Route>

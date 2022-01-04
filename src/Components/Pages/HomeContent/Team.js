@@ -78,7 +78,7 @@ const Team = () => {
                             Junior Developer
                         </Typography>
                         <Typography gutterBottom variant="h5" component="div">
-                            Ishrafil
+                            Ishrafil Alam
                         </Typography>
                         <Typography style={{ fontSize: "0.9em", opacity: 0.8, marginTop: "0.6em" }} variant="body2">
                             Experienced Junior Developer, videographer, film editor and responsible Team member.

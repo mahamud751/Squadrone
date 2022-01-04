@@ -18,6 +18,7 @@ const Navigation = () => {
                     <Navbar.Collapse className="justify-content-end">
                         <Nav.Link as={Link} to="/home"><Button style={{ textDecoration: 'none', color: 'white' }}>Home</Button></Nav.Link>
                         <Nav.Link as={Link} to="/products"><Button style={{ textDecoration: 'none', color: 'white' }}>Products</Button></Nav.Link>
+                        <Nav.Link as={Link} to="/blogs"><Button style={{ textDecoration: 'none', color: 'white' }}>Blogs</Button></Nav.Link>
 
 
 

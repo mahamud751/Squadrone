@@ -3,6 +3,7 @@ import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { Button, Container, Grid, TextField, Typography } from '@mui/material';
 import { FaGoogle } from 'react-icons/fa';
 import useAuth from '../../../hooks/useAuth';
+import Navigation from '../../Shared/Navigation/Navigation';
 
 const SignUp = () => {
     const [registerData, setRegisterData] = useState();
@@ -30,6 +31,7 @@ const SignUp = () => {
     };
     return (
         <>
+            <Navigation></Navigation>
             <Container>
                 <Grid container spacing={2}>
                     <Grid item xs={12} md={6}>
