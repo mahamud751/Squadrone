@@ -1,27 +1,27 @@
 import React from 'react';
 import Navigation from '../../Shared/Navigation/Navigation';
-import Footer from '../Footer/Footer';
-import FourthPart from '../HomeContent/FourthPart';
-
-import SecondPart from '../HomeContent/SecondPart';
-import ThirdPart from '../HomeContent/ThirdPart';
-import DronePictures from '../HomeContent/DronePictures'
-import Faq from '../Faq/Faq'
-
 import Slider from '../Slider/Slider';
+import Team from '../HomeContent/Team';
+import Footer from '../Footer/Footer';
+// import DronePictures from '../HomeContent/DronePictures'
+import Faq from './Faq/Faq'
+import About from '../HomeContent/About';
+import Services from '../HomeContent/Services';
+import TechnologyDetails from '../HomeContent/TechnologyDetails';
+
 
 const Home = () => {
     return (
         <div>
             <Navigation></Navigation>
             <Slider></Slider>
-            <SecondPart></SecondPart>
-            <FourthPart></FourthPart>
-            <ThirdPart></ThirdPart>
-            <DronePictures></DronePictures>
+            <About></About>
+            <TechnologyDetails></TechnologyDetails>
+            <Services></Services>
+            {/* <DronePictures></DronePictures> */}
+            <Team></Team>
             <Faq></Faq>
             <Footer></Footer>
-
         </div>
     );
 };

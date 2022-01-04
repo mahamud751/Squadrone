@@ -1,7 +1,7 @@
 import { Grid, Typography, Container } from '@mui/material';
 import React from 'react';
 
-const SecondPart = () => {
+const About = () => {
     return (
         <div style={{ marginTop: "120px" }}>
             <div className='d-flex justify-content-center align-content-center'>
@@ -42,4 +42,4 @@ const SecondPart = () => {
     );
 };
 
-export default SecondPart;
+export default About;
