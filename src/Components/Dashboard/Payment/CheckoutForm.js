@@ -15,7 +15,7 @@ const CheckoutForm = ({ order }) => {
     const [clientSecret, setClientSecret] = useState('');
 
     useEffect(() => {
-        fetch('https:', {
+        fetch('https://pacific-wave-94058.herokuapp.com', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'
@@ -81,7 +81,7 @@ const CheckoutForm = ({ order }) => {
                 last4: paymentMethod.card.last4,
                 transaction: paymentIntent.client_secret.slice('_secret')[0]
             }
-            const url = `https:/${_id}`;
+            const url = `https://pacific-wave-94058.herokuapp.com/${_id}`;
             fetch(url, {
                 method: 'PUT',
                 headers: {

@@ -10,7 +10,7 @@ const Payment = () => {
     const { orderId } = useParams();
     const [order, setOrder] = useState({});
     useEffect(() => {
-        fetch(`https:/${orderId}`)
+        fetch(`https://pacific-wave-94058.herokuapp.com/${orderId}`)
             .then(res => res.json())
             .then(data => setOrder(data));
     }, [orderId]);
