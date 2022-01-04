@@ -23,6 +23,7 @@ const Payment = () => {
                     order={order}
                 />
             </Elements>}
+            <h2>hello</h2>
         </div>
     );
 };
