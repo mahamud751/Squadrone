@@ -17,7 +17,7 @@ const About = () => {
                                     AERIAL PHOTOGRAPHY
                                 </Typography>
                                 <Typography variant='h2'>
-                                    We Are Drone Pilots
+                                    We Are Drone Pilots.
                                 </Typography>
                                 <Typography variant='h6'>
                                     The most innovate feature is probably its advanced controls. Using simple hand gestures, you can take off, tell the drone to follow you and fly hi-quality drones.
