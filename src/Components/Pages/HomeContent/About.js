@@ -1,7 +1,7 @@
 import { Grid, Typography, Container } from '@mui/material';
 import React from 'react';
 
-const SecondPart = () => {
+const About = () => {
     return (
         <div style={{ marginTop: "120px" }}>
             <div className='d-flex justify-content-center align-content-center'>
@@ -17,7 +17,7 @@ const SecondPart = () => {
                                     AERIAL PHOTOGRAPHY
                                 </Typography>
                                 <Typography variant='h2'>
-                                    We Are Drone Pilots
+                                    We Are Drone Pilots.
                                 </Typography>
                                 <Typography variant='h6'>
                                     The most innovate feature is probably its advanced controls. Using simple hand gestures, you can take off, tell the drone to follow you and fly hi-quality drones.
@@ -42,4 +42,4 @@ const SecondPart = () => {
     );
 };
 
-export default SecondPart;
+export default About;

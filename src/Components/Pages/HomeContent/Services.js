@@ -9,7 +9,7 @@ import LocalGasStationIcon from '@mui/icons-material/LocalGasStation';
 import BoltIcon from '@mui/icons-material/Bolt';
 import AssistantDirectionIcon from '@mui/icons-material/AssistantDirection';
 
-const ThirdPart = () => {
+const Services = () => {
 
     return (
         <div style={{ marginTop: "120px" }}>
@@ -140,4 +140,4 @@ const ThirdPart = () => {
     );
 };
 
-export default ThirdPart;
+export default Services;

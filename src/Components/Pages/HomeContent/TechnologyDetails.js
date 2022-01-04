@@ -6,7 +6,7 @@ import BatteryCharging60Icon from '@mui/icons-material/BatteryCharging60';
 import { pink } from '@mui/material/colors';
 
 
-const FourthPart = () => {
+const TechnologyDetails = () => {
     return (
         <div style={{ marginTop: "120px" }}>
             <div >
@@ -65,5 +65,5 @@ const FourthPart = () => {
         </div>
     );
 };
+export default TechnologyDetails;
 
-export default FourthPart;
