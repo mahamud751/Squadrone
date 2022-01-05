@@ -9,6 +9,7 @@ import About from '../HomeContent/About';
 import Services from '../HomeContent/Services';
 
 import TechnologyDetails from '../HomeContent/TechnologyDetails';
+import Review from '../HomeContent/Review';
 
 
 const Home = () => {
@@ -23,6 +24,7 @@ const Home = () => {
             {/* <DronePictures></DronePictures> */}
             <Team></Team>
             <Faq></Faq>
+            <Review></Review>
             <Footer></Footer>
         </div>
     );
